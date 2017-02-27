@@ -8,13 +8,12 @@ If you are developing a *Java application* that uses none of the logging framewo
 For more information please visit the https://github.com/codetrails/ctrlflow-aer-client[main page].
 
 Jackson
--------
+--------
 
 This client uses Gson to serialize objects to JSON for sending them to the server.
 
 If you want to use Jackson, you can replace the Gson call in SimpleAerClient with:
 
-[source,java]
 ----
 ObjectMapper mapper = new ObjectMapper();
 mapper.configure(SerializationFeature.WRITE_EMPTY_JSON_ARRAYS, true);
